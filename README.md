@@ -26,7 +26,9 @@
 
 ```sudo systemctl reload apache2.service```
 
-```sudo mysql```
+``` 
+sudo mysql 
+```
 
 <h6>SQL</h6>
 
