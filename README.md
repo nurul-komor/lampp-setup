@@ -13,8 +13,6 @@
 
 ```sudo apt install php libapache2-mod-php php-mysql```
 ```php -v```
-```clear```
-```v```
 ```systemctl status mysql.service```
 ```sudo apt install php libapache2-mod-php php-mysql```
 ```sudo apt-cache search php | grep php-		#show all php packages```
@@ -22,15 +20,15 @@
 ```sudo systemctl restart apache2```
 ```sudo service restart apache2```
 ```sudo systemctl restart apache2```
-`
 ```sudo apt install phpmyadmin```
 ```sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf```
 ```sudo a2enconf phpmyadmin.conf```
 ```sudo systemctl reload apache2.service```
 ```sudo mysql```
-<h6>SQL</h6>
-```
 
+<h6>SQL</h6>
+
+```
 SHOW VARIABLES LIKE 'validate_password';
 use mysql;
 select user,plugin,host from mysql.user;
