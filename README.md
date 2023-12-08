@@ -15,9 +15,6 @@ sudo ufw status
 sudo ufw app list
 ```
 ```
-sudo ufw allow 'Apache'
-```
-```
 sudo ufw status
 ```
 ```
@@ -77,16 +74,9 @@ sudo a2enconf phpmyadmin.conf
 ```
 sudo systemctl reload apache2.service
 ```
-```
-sudo mysq -u root
-```
-```
-sudo mysql -u root
-```
 
-```
-mysql -u root -p
-```
+
+
 
 ```
 sudo apt install mysql-service
@@ -101,7 +91,7 @@ sudo mysql
 SHOW VARIABLES LIKE 'validate_password';
 use mysql;
 select user,plugin,host from mysql.user;
-ALTER USER 'root'@'localhost' INDENTIFIED WITH caching_sha2_password BY 'asdf';
+ALTER USER 'root'@'localhost' INDENTIFIED WITH auth_socket BY 'asdf';
 SHOW PRIVILEGES;
 ```
 GO to browser and type 'localhost/phpmyadmin'
