@@ -91,7 +91,7 @@ sudo mysql
 SHOW VARIABLES LIKE 'validate_password';
 use mysql;
 select user,plugin,host from mysql.user;
-ALTER USER 'root'@'localhost' INDENTIFIED WITH auth_socket BY 'asdf';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket BY 'asdf';
 SHOW PRIVILEGES;
 ```
 GO to browser and type 'localhost/phpmyadmin'
