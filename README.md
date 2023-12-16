@@ -92,6 +92,10 @@ SHOW VARIABLES LIKE 'validate_password';
 use mysql;
 select user,plugin,host from mysql.user;
 ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket BY 'asdf';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 SHOW PRIVILEGES;
+```
+```
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-22-04
 ```
 GO to browser and type 'localhost/phpmyadmin'
