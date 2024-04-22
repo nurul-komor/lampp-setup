@@ -15,7 +15,7 @@ sudo systemctl restart apache2
 sudo apt install phpmyadmin -y
 sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
 sudo systemctl reload apache2.service
-sudo apt install mysql-service -y
+
 sudo mysql 
 
 use mysql;
